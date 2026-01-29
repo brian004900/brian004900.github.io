@@ -122,8 +122,8 @@ function loadabout() {
                    '<h3>Taiwan Institute of Marketing Science Certificate of Marketing Planning (2019)</h3></div>'+
                    '</br>'+
                    '</br>'+
-                   '</br>'+
-                   '<a href="./pdfs/Brian_CV_.pdf" target="_blank" class="card-button">Résumé</a></div>';
+                   // '</br>'+
+                   // '<a href="./pdfs/Brian_CV_.pdf" target="_blank" class="card-button">Résumé</a></div>';
     aboutCon.appendChild(about1);
 
     allAbout = document.createElement('div'); 
@@ -133,33 +133,33 @@ function loadabout() {
 
     about1 = document.createElement('div'); 
     about1.classList.add('about1');
-    about1.innerHTML = `
-    <div class="aboutin">
-    <div class="container">
-      <form action="https://docs.google.com/forms/u/3/d/e/1FAIpQLScA52mI9-sUfV-7K2-8GBI-OxQorCBlMGHazgL3mgonpUomNg/formResponse" method='post'>
-        <div class="row">
-          <input type="text" class="input" name="entry.1542095054" placeholder="Name*" required>
-          <input type="text" class="input" name="entry.75762421" placeholder="Phone">
-        </div>
-        <div class="row">
-          <input type="email" class="input" name="entry.2108674751" placeholder="Email*" required>
-        </div>
-        <div class="row">
-          <textarea class="input textarea" name="entry.1885054033" placeholder="Message*" required></textarea>
-        </div>
-        <div class="row">
-          <button type="submit" class="button">Submit</button>
-        </div>
-      </form>
-    </div>
-  </div>
+//     about1.innerHTML = `
+//     <div class="aboutin">
+//     <div class="container">
+//       <form action="https://docs.google.com/forms/u/3/d/e/1FAIpQLScA52mI9-sUfV-7K2-8GBI-OxQorCBlMGHazgL3mgonpUomNg/formResponse" method='post'>
+//         <div class="row">
+//           <input type="text" class="input" name="entry.1542095054" placeholder="Name*" required>
+//           <input type="text" class="input" name="entry.75762421" placeholder="Phone">
+//         </div>
+//         <div class="row">
+//           <input type="email" class="input" name="entry.2108674751" placeholder="Email*" required>
+//         </div>
+//         <div class="row">
+//           <textarea class="input textarea" name="entry.1885054033" placeholder="Message*" required></textarea>
+//         </div>
+//         <div class="row">
+//           <button type="submit" class="button">Submit</button>
+//         </div>
+//       </form>
+//     </div>
+//   </div>
   
-  `;
-    aboutCon.appendChild(about1);
-  }
-  var aboutin = document.querySelectorAll('.aboutin');
-  observeProjectCards(aboutin);
-}
+//   `;
+//     aboutCon.appendChild(about1);
+//   }
+//   var aboutin = document.querySelectorAll('.aboutin');
+//   observeProjectCards(aboutin);
+// }
 
 
 const arrows = document.querySelectorAll('.arrow-con i');
