@@ -112,23 +112,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const contactTitle = document.createElement('div');
     contactTitle.className = 'allAbout';
-    contactTitle.innerHTML = '<h1>Get in Touch!</h1>';
+    // contactTitle.innerHTML = '<h1>Get in Touch!</h1>';
     aboutCon.appendChild(contactTitle);
 
-    const contactForm = document.createElement('div');
-    contactForm.className = 'about1';
-    contactForm.innerHTML = `
-      <div class="aboutin">
-        <form action="https://docs.google.com/forms/u/3/d/e/1FAIpQLScA52mI9-sUfV-7K2-8GBI-OxQorCBlMGHazgL3mgonpUomNg/formResponse" method="POST">
-          <input name="entry.1542095054" placeholder="Name*" required>
-          <input name="entry.75762421" placeholder="Phone">
-          <input type="email" name="entry.2108674751" placeholder="Email*" required>
-          <textarea name="entry.1885054033" placeholder="Message*" required></textarea>
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-    `;
-    aboutCon.appendChild(contactForm);
+    // const contactForm = document.createElement('div');
+    // contactForm.className = 'about1';
+    // contactForm.innerHTML = `
+    //   <div class="aboutin">
+    //     <form action="https://docs.google.com/forms/u/3/d/e/1FAIpQLScA52mI9-sUfV-7K2-8GBI-OxQorCBlMGHazgL3mgonpUomNg/formResponse" method="POST">
+    //       <input name="entry.1542095054" placeholder="Name*" required>
+    //       <input name="entry.75762421" placeholder="Phone">
+    //       <input type="email" name="entry.2108674751" placeholder="Email*" required>
+    //       <textarea name="entry.1885054033" placeholder="Message*" required></textarea>
+    //       <button type="submit">Submit</button>
+    //     </form>
+    //   </div>
+    // `;
+    // aboutCon.appendChild(contactForm);
 
     observeElements(document.querySelectorAll('.aboutin'));
   }
