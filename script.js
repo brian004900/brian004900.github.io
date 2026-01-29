@@ -110,10 +110,10 @@ document.addEventListener('DOMContentLoaded', function () {
     `;
     aboutCon.appendChild(aboutContent);
 
-    const contactTitle = document.createElement('div');
-    contactTitle.className = 'allAbout';
+    // const contactTitle = document.createElement('div');
+    // contactTitle.className = 'allAbout';
     // contactTitle.innerHTML = '<h1>Get in Touch!</h1>';
-    aboutCon.appendChild(contactTitle);
+    // aboutCon.appendChild(contactTitle);
 
     // const contactForm = document.createElement('div');
     // contactForm.className = 'about1';
