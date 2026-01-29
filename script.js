@@ -156,10 +156,10 @@ function loadabout() {
   
 //   `;
 //     aboutCon.appendChild(about1);
-//   }
-//   var aboutin = document.querySelectorAll('.aboutin');
-//   observeProjectCards(aboutin);
-// }
+  }
+  var aboutin = document.querySelectorAll('.aboutin');
+  observeProjectCards(aboutin);
+}
 
 
 const arrows = document.querySelectorAll('.arrow-con i');
