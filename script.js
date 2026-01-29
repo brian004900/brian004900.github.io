@@ -122,8 +122,8 @@ function loadabout() {
                    '<h3>Taiwan Institute of Marketing Science Certificate of Marketing Planning (2019)</h3></div>'+
                    '</br>'+
                    '</br>'+
-                   // '</br>'+
-                   // '<a href="./pdfs/Brian_CV_.pdf" target="_blank" class="card-button">Résumé</a></div>';
+                   '</br>'+
+                   '<a href="./pdfs/Brian_CV_.pdf" target="_blank" class="card-button">Résumé</a></div>';
     aboutCon.appendChild(about1);
 
     allAbout = document.createElement('div'); 
