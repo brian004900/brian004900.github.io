@@ -1,121 +1,301 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="styles.css">
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Brian Chung — analytics engineer and applied machine learning researcher. Production data systems, distributed pipelines, computer vision, and weakly supervised learning." />
+  <meta name="theme-color" content="#f5f5f7" />
+  <title>Brian Chung — Data Systems & Applied ML</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-    <div id="scroll-progress"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
 
-    <header>
-        <nav>
-            <div class="nav_border">
-                <ul class="nav_links">
-                    <li><a href="#project" id="project">project</a></li>
-                    <li><a href="#about" id="about">about</a></li>
-                </ul>
-            </div>
+  <header class="site-nav" id="top">
+    <a class="nameplate" href="#top" aria-label="Brian Chung home">Brian Chung</a>
+    <nav aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#research">Research</a>
+      <a href="#builds">Builds</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="nav-cta" href="mailto:workbc870409@gmail.com">Email me <span>↗</span></a>
+  </header>
 
+  <main>
+    <section class="hero personal-hero" aria-labelledby="hero-title">
+      <div class="hero-atmosphere" aria-hidden="true">
+        <div class="orb orb-a"></div><div class="orb orb-b"></div><div class="orb orb-c"></div>
+        <div class="hero-grid"></div>
+        <div class="hero-ring ring-1"></div><div class="hero-ring ring-2"></div><div class="hero-ring ring-3"></div>
+      </div>
 
-        </nav>
-    </header>
-
-    <div class="content">
-
-        <div class="mytitle" style="color: white; display: flex; align-items: center;">
-            <div>
-                <h1>
-                    Hi, I am <span style="color: mediumturquoise;">Brian</span>
-                </h1>  
-                <div class="introduction" style="margin-top: 70px; width: 270px; height: 260px; overflow: hidden; text-overflow: ellipsis;">
-                    <p style="text-align: center; font-style: oblique;">
-                        I am a Data Scientist holding a master's in Big Data Analytics, with a solid AI and machine learning background from AI4Business Lab. My skills span data analysis, database management, and developing automated pipelines with Docker. I am passionate about data science and AI.
-                    </p>
-                    <br>
-                    <br>
-                    <p>
-                        The website is built from scratch utilizing HTML, javascript, jquery, CSS, etc.
-                    </p>
-                </div>
-            </div>
+      <div class="hero-inner">
+        <p class="hero-kicker reveal-up">Analytics engineering · Computer vision · Applied ML</p>
+        <h1 id="hero-title" class="hero-title reveal-up">
+          I build data systems that hold up in production.
+          <span>And models that hold up under scrutiny.</span>
+        </h1>
+        <p class="hero-sub reveal-up">I’m Brian Chung — an analytics engineer working on distributed data systems and an applied ML researcher focused on computer vision, weak supervision, and efficient learning.</p>
+        <div class="hero-actions reveal-up">
+          <a class="button button-primary magnetic" href="#work">See what I built</a>
+          <a class="button button-ghost magnetic" href="https://github.com/brian004900/R2TC-MIL" target="_blank" rel="noreferrer">Side research ↗</a>
         </div>
-        
-
-
-
-        <div class="project-con">
-
-        
-            <div class="arrow-con">
-                <i class="arrow down"></i>
-                <i class="arrow down"></i>
-                <i class="arrow down"></i>
-                <i class="arrow down"></i>
-                <i class="arrow down"></i>
-            </div>
-
-            
-            <div class="project-place">
-                <div class="project-card">
-
-                    <img class="project-image" src="postcards/Slide1.jpeg"
-                        alt="Project 1">
-                    <div class="project-name" style="color: brown;">Publication in early submission, will be announced</div>
-                </div>
-
-                <a href="#" onclick="setTimeout(function(){ window.location.href='https://sites.google.com/sdsu.edu/sleepfacts1/home'; }, 800); return false;">
-                    <div class="project-card">
-                        <img class="project-image" src="postcards/Slide2.jpeg"
-                            alt="Project 2">
-                        <div class="project-name">Select</div>
-                    </div>
-                </a>
-
-                <a href="javascript:void(0);" onclick="setTimeout(function(){ window.location.href='R.html'; }, 800); return false;">
-                    <div class="project-card">
-                        <img class="project-image" src="postcards/Slide3.jpeg"
-                            alt="Project 3">
-                        <div class="project-name">Select</div>
-                    </div>
-                </a>
-
-                <a href="#" onclick="setTimeout(function(){ window.location.href='https://github.com/brian004900/ml_feature_engineer?tab=readme-ov-file'; }, 800); return false;">
-                    <div class="project-card">
-                        <img class="project-image" src="postcards/Slide4.jpeg"
-                            alt="Project 4">
-                        <div class="project-name">Select</div>
-                    </div>
-                </a>
-                
-            </div>
+        <div class="hero-proof reveal-up" aria-label="Focus areas">
+          <span>GCP Dataflow + Apache Beam</span><i></i><span>PyTorch + computer vision</span><i></i><span>forecasting + analytics</span><i></i><span>weakly supervised learning</span>
         </div>
+      </div>
 
-
-        <div class="about-con">
+      <div class="hero-device reveal-scale personal-device" id="heroDevice" aria-label="Interactive career preview">
+        <div class="device-shell">
+          <div class="device-topbar">
+            <div class="traffic"><i></i><i></i><i></i></div>
+            <span>BRIAN / SELECTED WORK</span>
+            <span class="live-dot"><b></b> INTERACTIVE</span>
+          </div>
+          <div class="portfolio-console">
+            <aside class="portfolio-modes" aria-label="Career focus">
+              <button class="portfolio-mode active" type="button" data-mode="production"><span>01</span><b>Production systems</b><small>pipelines · analytics · reliability</small></button>
+              <button class="portfolio-mode" type="button" data-mode="research"><span>02</span><b>ML research</b><small>vision · MIL · model analysis</small></button>
+              <div class="portfolio-location"><span>Current role</span><b>City of Los Angeles</b><small>Data Analyst II · Analytics Engineering</small></div>
+            </aside>
+            <div class="portfolio-main">
+              <div class="portfolio-heading">
+                <div><span class="eyebrow-sm" id="heroModeLabel">PRODUCTION DATA SYSTEMS</span><h2 id="heroModeTitle">Distributed pipelines, rebuilt for speed and reliability.</h2></div>
+                <div class="portfolio-badge" id="heroModeBadge">GCP / BEAM</div>
+              </div>
+              <div class="portfolio-kpis" id="heroKpis"></div>
+              <div class="portfolio-viz">
+                <svg id="heroChart" viewBox="0 0 860 330" preserveAspectRatio="none" aria-hidden="true"></svg>
+                <div class="portfolio-toast toast-a" id="heroToastA"><i></i><div><b>Pipeline refactor</b><small>event-driven execution + autoscaling</small></div></div>
+                <div class="portfolio-toast toast-b" id="heroToastB"><i></i><div><b>Decision layer</b><small>forecasting inside production data flows</small></div></div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
 
+      <a class="scroll-cue" href="#impact" aria-label="Scroll to impact"><span></span>Scroll to explore</a>
+    </section>
 
-    </div>
+    <section class="impact section-pad" id="impact" aria-labelledby="impact-title">
+      <div class="section-heading narrow reveal-up">
+        <p class="eyebrow">Selected impact</p>
+        <h2 id="impact-title">I like work where the result is measurable.</h2>
+        <p>Across production analytics engineering and applied ML research, I focus on execution details: throughput, model behavior, reliability, and whether the output changes a real workflow.</p>
+      </div>
+      <div class="impact-grid">
+        <article class="impact-card reveal-up"><strong><span class="count" data-to="25">25</span>%</strong><h3>lower end-to-end latency</h3><p>After redesigning Dataflow execution logic, windowing strategies, and worker configuration.</p><small>Distributed data pipelines</small></article>
+        <article class="impact-card reveal-up"><strong><span class="count" data-to="30">30</span>%</strong><h3>lower compute overhead</h3><p>By refactoring legacy ETL into scalable, event-driven processing with stronger observability.</p><small>Cloud data engineering</small></article>
+        <article class="impact-card reveal-up"><strong><span class="count" data-to="60000">60,000</span>+</strong><h3>images trained & evaluated</h3><p>Across pavement distress research using Linux GPU servers, PyTorch, ablations, and model interpretation.</p><small>Computer vision research</small></article>
+        <article class="impact-card reveal-up"><strong><span class="count" data-to="0.923" data-decimals="3">0.923</span></strong><h3>R²TC-MIL test AUC</h3><p>0.923 ± 0.039 AUC with 0.885 ± 0.024 ACC on the repository’s 5-fold SLN-Breast evaluation.</p><small>Weakly supervised WSI classification</small></article>
+      </div>
+    </section>
 
+    <section class="statement section-pad">
+      <p class="supercopy reveal-word">Two tracks. One habit. <span>Make the system understandable, measurable, and better than before.</span></p>
+    </section>
 
-    <!-- <div class="contact-buttom" style="color: white;">
-        <h4>
-            workbc870409@gmail.com
-        </h4>
-        <h4>
-            626-802-8038
-        </h4>
-    </div> -->
+    <section class="system-story career-story" id="work" aria-labelledby="work-title">
+      <div class="story-copy">
+        <p class="eyebrow">Production engineering</p>
+        <h2 id="work-title">What I do in the data layer.</h2>
+        <p>My current work sits between application engineering, data infrastructure, analytics, and operational decision-making. I build the path from raw events to a reliable answer.</p>
+        <div class="story-nav" role="tablist" aria-label="Production engineering stages">
+          <button class="story-step active" data-step="0" type="button"><b>01</b><span>Architect</span><small>distributed execution on GCP Dataflow</small></button>
+          <button class="story-step" data-step="1" type="button"><b>02</b><span>Refactor</span><small>legacy ETL → event-driven pipelines</small></button>
+          <button class="story-step" data-step="2" type="button"><b>03</b><span>Serve</span><small>data marts, BI, forecasting</small></button>
+          <button class="story-step" data-step="3" type="button"><b>04</b><span>Operate</span><small>IAM, encryption, monitoring</small></button>
+        </div>
+      </div>
 
-    <script src="script.js"></script>
+      <div class="story-stage" aria-live="polite">
+        <div class="story-card active" data-panel="0">
+          <div class="story-head"><span>ARCHITECT</span><em>−25% latency</em></div>
+          <div class="arch-viz">
+            <div class="arch-node source"><span>events</span><b>stream + batch</b><small>incoming operational data</small></div>
+            <div class="arch-line l1"><i></i></div>
+            <div class="arch-node beam"><span>Apache Beam</span><b>window · key · transform</b><small>portable pipeline logic</small></div>
+            <div class="arch-line l2"><i></i></div>
+            <div class="arch-node dataflow"><span>GCP Dataflow</span><b>autoscale · workers</b><small>distributed execution</small></div>
+            <div class="arch-line l3"><i></i></div>
+            <div class="arch-node output"><span>serving layer</span><b>analytics + apps</b><small>decision-ready outputs</small></div>
+          </div>
+          <div class="case-note"><b>What changed</b><p>I redesigned execution logic, windowing, and worker configuration to improve throughput and reduce end-to-end latency by 25%.</p></div>
+        </div>
+        <div class="story-card" data-panel="1">
+          <div class="story-head"><span>REFACTOR</span><em>−30% compute overhead</em></div>
+          <div class="before-after">
+            <div class="legacy-stack"><span>BEFORE</span><article>cron job</article><article>manual retry</article><article>fixed workers</article><article>thin visibility</article></div>
+            <div class="refactor-arrow"><i></i><b>→</b></div>
+            <div class="modern-stack"><span>AFTER</span><article>event-driven</article><article>autoscaling</article><article>orchestrated</article><article>observable</article></div>
+          </div>
+          <div class="case-note"><b>Why it mattered</b><p>The refactor reduced compute overhead while improving fault tolerance and observability — turning a brittle workflow into an operable system.</p></div>
+        </div>
+        <div class="story-card" data-panel="2">
+          <div class="story-head"><span>SERVE</span><em>analytics + forecasting</em></div>
+          <div class="serve-grid">
+            <div class="serve-card"><span>REAL-TIME</span><b>analytical marts</b><small>fresh operational KPIs</small></div>
+            <div class="serve-card"><span>BI</span><b>Power BI · Looker · ArcGIS</b><small>multiple consumers, shared models</small></div>
+            <div class="serve-card"><span>PREDICT</span><b>statistical forecasting</b><small>predictive outputs in the pipeline</small></div>
+            <div class="serve-card accent"><span>OUTCOME</span><b>+15% support efficiency</b><small>standardized models + cross-team use</small></div>
+          </div>
+          <div class="case-note"><b>My approach</b><p>I prefer analytics logic close to the production data path, so reporting and predictive outputs share the same definitions instead of drifting into separate systems.</p></div>
+        </div>
+        <div class="story-card" data-panel="3">
+          <div class="story-head"><span>OPERATE</span><em>secure by default</em></div>
+          <div class="ops-viz">
+            <div class="ops-ring"><span>IAM</span><small>least privilege</small></div>
+            <div class="ops-ring"><span>ENC</span><small>protected flows</small></div>
+            <div class="ops-ring"><span>OBS</span><small>workflow health</small></div>
+            <div class="ops-center"><b>production data</b><small>security · reliability · traceability</small></div>
+          </div>
+          <div class="case-note"><b>Production means ownership</b><p>I implemented encryption, IAM controls, and workflow monitoring so the pipeline is not only fast, but secure, observable, and supportable.</p></div>
+        </div>
+      </div>
+    </section>
 
+    <section class="vision section-pad featured-vision" id="research" aria-labelledby="vision-title">
+      <div class="section-heading reveal-up vision-heading">
+        <p class="eyebrow">Computer vision research</p>
+        <h2 id="vision-title">State-of-the-art recognition across two pavement-distress benchmarks.</h2>
+        <p>At AI4Business Lab, I designed and trained a fine-grained pavement-distress recognition architecture using multi-scale self-distillation and structure-aware learning. The model achieved state-of-the-art recognition performance on <strong>CQU-BPDD</strong> and <strong>Sampled PaveTrack</strong>, with training and evaluation spanning more than 60,000 images.</p>
+      </div>
+
+      <div class="vision-results reveal-up" aria-label="Computer vision research outcomes">
+        <article><span>CQU-BPDD</span><b>SOTA</b><small>recognition performance</small></article>
+        <article><span>Sampled PaveTrack</span><b>SOTA</b><small>recognition performance</small></article>
+        <article><span>Training scale</span><b>60K+</b><small>images trained &amp; evaluated</small></article>
+      </div>
+
+      <div class="vision-grid featured-vision-grid">
+        <div class="vision-copy reveal-up">
+          <p class="eyebrow">Model analysis</p>
+          <h3>Performance mattered. So did understanding why it worked.</h3>
+          <p>I built end-to-end training pipelines on Linux GPU servers, tuned hyperparameters, and used ablation studies plus Grad-CAM to validate the contribution of the architecture and inspect what regions drove recognition decisions.</p>
+          <div class="vision-tags"><span>PyTorch</span><span>Linux GPU</span><span>multi-scale learning</span><span>self-distillation</span><span>Grad-CAM</span><span>ablation studies</span></div>
+        </div>
+        <div class="heatmap-card reveal-scale" id="heatmapCard">
+          <div class="heatmap-top"><span>MODEL INTERPRETABILITY</span><b>Grad-CAM view</b></div>
+          <div class="road-sim" aria-hidden="true"><div class="crack crack-a"></div><div class="crack crack-b"></div><div class="crack crack-c"></div><div class="heat h1"></div><div class="heat h2"></div><div class="heat h3"></div></div>
+          <div class="heatmap-foot"><span><i></i>high attention</span><span>structure-aware analysis</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="research section-pad" id="side-research" aria-labelledby="side-research-title">
+      <div class="section-heading reveal-up">
+        <p class="eyebrow">Featured side research</p>
+        <h2 id="side-research-title">R²TC-MIL: keep every patch. Change what the model listens to.</h2>
+        <p>Whole-slide pathology images are enormous, while labels often exist only at the slide level. My R²TC-MIL project adds a lightweight Cluster-Conditioned Instance Reweighting step to refine which instances matter during MIL aggregation.</p>
+      </div>
+
+      <div class="research-shell reveal-scale">
+        <div class="research-toolbar">
+          <div><span>R²TC-MIL / SLN-BREAST</span><small>weakly supervised WSI classification</small></div>
+          <a href="https://github.com/brian004900/R2TC-MIL" target="_blank" rel="noreferrer">Open repository ↗</a>
+        </div>
+        <div class="mil-layout">
+          <div class="mil-copy">
+            <span class="eyebrow-sm">CORE IDEA</span>
+            <h3>Cluster context becomes a soft signal, not a hard filter.</h3>
+            <p>Instead of selecting or dropping patches, CIR scores bag-wise clusters and maps those scores back into soft instance weights. Every patch stays in the bag; its influence changes.</p>
+            <button class="button button-primary magnetic" id="runMil" type="button">Animate CIR <span>▶</span></button>
+          </div>
+          <div class="mil-stage" id="milStage" aria-label="Animated R2TC-MIL pipeline">
+            <div class="wsi-board">
+              <div class="wsi-label">whole-slide image</div>
+              <div class="patch-grid" id="patchGrid" aria-hidden="true"></div>
+            </div>
+            <div class="mil-arrow"><i></i><span>patch features</span></div>
+            <div class="cluster-board">
+              <span>bag-wise clusters</span>
+              <div class="clusters"><i class="c1"></i><i class="c1"></i><i class="c1"></i><i class="c2"></i><i class="c2"></i><i class="c3"></i><i class="c3"></i><i class="c3"></i><i class="c3"></i></div>
+              <small>unsupervised context</small>
+            </div>
+            <div class="mil-arrow"><i></i><span>cluster score</span></div>
+            <div class="reweight-board">
+              <span>soft reweighting</span>
+              <div class="weight-bars"><b style="--w:72%"></b><b style="--w:38%"></b><b style="--w:88%"></b><b style="--w:56%"></b></div>
+              <small>all instances retained</small>
+            </div>
+            <div class="mil-arrow"><i></i><span>aggregate</span></div>
+            <div class="prediction-board"><span>slide prediction</span><b id="predictionScore">0.92</b><small>AUC-oriented evaluation</small></div>
+          </div>
+        </div>
+        <div class="result-compare">
+          <div class="result-title"><span>5-fold test comparison</span><small>same split protocol and frozen ResNet50-trunc features for MIL methods</small></div>
+          <div class="result-row"><span>ABMIL</span><i><b style="--score:84.3%"></b></i><em>0.843 AUC</em></div>
+          <div class="result-row"><span>R²T-MIL</span><i><b style="--score:89.3%"></b></i><em>0.893 AUC</em></div>
+          <div class="result-row featured"><span>R²TC-MIL</span><i><b style="--score:92.3%"></b></i><em>0.923 AUC</em></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="builds section-pad" id="builds" aria-labelledby="builds-title">
+      <div class="section-heading reveal-up">
+        <p class="eyebrow">Other things I have built</p>
+        <h2 id="builds-title">Research prototypes, internal tools, and practical automation.</h2>
+        <p>The common thread is not a specific model or framework. It is taking an ambiguous workflow, making the data usable, and building something people can actually operate.</p>
+      </div>
+      <div class="build-grid">
+        <article class="build-card big reveal-up"><span>LLM / INFORMATION RETRIEVAL</span><h3>Semantic code retrieval with a fine-tuned language model.</h3><p>Fine-tuned LLMs for code-search tasks and researched large-language-model approaches for code applications.</p><div class="code-search-demo" aria-hidden="true"><div class="query">“find authentication middleware”</div><div class="match"><b>0.94</b><span>auth/middleware.py</span></div><div class="match"><b>0.87</b><span>session/verify.ts</span></div><div class="match"><b>0.81</b><span>api/security.py</span></div></div></article>
+        <article class="build-card reveal-up"><span>PYTHON AUTOMATION</span><h3>Automated grade calculation.</h3><p>Built a Python workflow around established grading rules that reduced teaching-assistant calculation time by roughly 80%.</p><div class="mini-flow"><b>rules</b><i></i><b>Python</b><i></i><b>grades</b></div></article>
+        <article class="build-card reveal-up"><span>KNOWLEDGE SEARCH</span><h3>Email search for faster support.</h3><p>Developed a mail-search system that let new teaching assistants retrieve similar historical responses and answer recurring questions faster.</p><div class="search-lines"><i></i><i></i><i></i><i></i></div></article>
+        <article class="build-card reveal-up"><span>RECOMMENDATION + PRIVACY</span><h3>Social-network and tracking analysis.</h3><p>Built research tooling around privacy tracking protection, social-network dynamics, and recommendation-system questions.</p><div class="network-mini" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><b></b></div></article>
+        <article class="build-card reveal-up"><span>MAPS + PUBLIC ENGAGEMENT</span><h3>Regional tourism data experience.</h3><p>Integrated historical and agricultural points of interest with Google Maps API for a university social-responsibility project in Taiwan.</p><div class="map-mini" aria-hidden="true"><span></span><span></span><span></span></div></article>
+      </div>
+    </section>
+
+    <section class="skills section-pad" id="about" aria-labelledby="skills-title">
+      <div class="section-heading narrow reveal-up">
+        <p class="eyebrow">Tools I reach for</p>
+        <h2 id="skills-title">Built around Python, cloud data systems, and deep learning.</h2>
+      </div>
+      <div class="skill-grid">
+        <article class="skill-card reveal-up"><span>DATA SYSTEMS</span><h3>Production pipelines</h3><p>Python · SQL · GCP · Dataflow · Apache Beam · Bash · Linux · Docker</p></article>
+        <article class="skill-card reveal-up"><span>APPLIED ML</span><h3>Modeling & vision</h3><p>PyTorch · TensorFlow · OpenCV · scikit-learn · CNN · Vision Transformers · Mamba · transfer learning</p></article>
+        <article class="skill-card reveal-up"><span>ANALYTICS</span><h3>Decision layers</h3><p>Forecasting · statistical analysis · Power BI · Looker Studio · ArcGIS · Plotly · standardized data models</p></article>
+        <article class="skill-card reveal-up"><span>RESEARCH</span><h3>How I validate</h3><p>Ablation studies · Grad-CAM · benchmark evaluation · literature synthesis · reproducible training pipelines</p></article>
+      </div>
+    </section>
+
+    <section class="timeline-section section-pad" aria-labelledby="timeline-title">
+      <div class="section-heading reveal-up">
+        <p class="eyebrow">Experience & education</p>
+        <h2 id="timeline-title">A path from management science to production systems and AI research.</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal-up"><span>2024 — PRESENT</span><div><h3>Data Analyst II · Analytics Engineering</h3><b>City of Los Angeles · AppDev</b><p>Distributed pipelines, event-driven ETL, analytical marts, forecasting, security, and observability on GCP.</p></div></article>
+        <article class="timeline-item reveal-up"><span>2024 — 2026</span><div><h3>Lab Coordinator / Graduate Research Assistant</h3><b>AI4Business Lab · San Diego State University Research Foundation</b><p>Computer vision architecture, 60k+ image training, model interpretation, LLM code retrieval, and cross-functional research delivery.</p></div></article>
+        <article class="timeline-item reveal-up"><span>2023 — 2024</span><div><h3>Teaching Assistant · Management Information Systems</h3><b>Fowler College of Business · SDSU</b><p>Built internal search and Python automation while supporting business analytics, machine learning, and web development courses.</p></div></article>
+        <article class="timeline-item reveal-up"><span>FEB — JUN 2022</span><div><h3>Office Assistant · CRM & IT Support</h3><b>Jeff Byrd Financial · Part-time</b><p>• Standardized and migrated client records in ACT while supporting day-to-day IT needs, cutting customer-management time by 30%.</p></div></article>
+        <article class="timeline-item reveal-up"><span>2020 — 2021</span><div><h3>Research Assistant · Management Sciences</h3><b>Tamkang University · Taiwan</b><p>Recommendation systems, social-network analysis, privacy research, and a Google Maps API project for regional tourism.</p></div></article>
+        <article class="timeline-item education reveal-up"><span>2024</span><div><h3>M.S. Big Data Analytics · GPA 3.88</h3><b>San Diego State University</b><p>Machine learning engineering, database management, time-series analysis, and data science.</p></div></article>
+        <article class="timeline-item education reveal-up"><span>2021</span><div><h3>B.S. Management Sciences</h3><b>Tamkang University · Taiwan</b><p>Quantitative management foundation that led into data, recommendation systems, and applied research.</p></div></article>
+      </div>
+    </section>
+
+    <section class="contact section-pad" id="contact" aria-labelledby="contact-title">
+      <div class="contact-glow" aria-hidden="true"></div>
+      <p class="eyebrow">Let’s talk about the actual problem</p>
+      <h2 id="contact-title">Data systems.<br/>Applied ML. Real constraints.</h2>
+      <p>I’m most interested in work where the technical problem is connected to a real operating or research question — not technology for its own sake.</p>
+      <div class="contact-links reveal-up">
+        <a class="button button-primary magnetic" href="mailto:workbc870409@gmail.com">workbc870409@gmail.com <span>↗</span></a>
+        <a class="button button-ghost magnetic" href="https://github.com/brian004900" target="_blank" rel="noreferrer">GitHub ↗</a>
+        <a class="button button-ghost magnetic" href="https://www.linkedin.com/in/brian-chung-70b720255" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="nameplate" href="#top">Brian Chung</a>
+    <p>Analytics engineering · applied machine learning</p>
+    <div><a href="#work">Work</a><a href="#research">Research</a><a href="#builds">Builds</a><a href="#contact">Contact</a></div>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
-
 </html>
